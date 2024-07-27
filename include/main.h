@@ -4,7 +4,7 @@
 #include<Arduino.h>
 #include<Wire.h>
 
-#define I2C_ADDRESS 0x08
+#define I2C_ADDRESS 0x09
 
 #define FRONT_LEFT_ECHO 4
 #define FRONT_LEFT_TRIG 6
@@ -26,7 +26,7 @@
 
 #define SOUND_SPEED 0.034
 
-#define UP_MESSAGE "Base up"
+#define UP_MESSAGE "Sensors up"
 
 #define UP_CHAR '*'
 
