@@ -2,8 +2,6 @@
 
 bool received_confirmation = false;
 
-bool should_send = false;
-
 uint8_t buffer[12];
 
 uint32_t measure(const int echo, const int trig) {
