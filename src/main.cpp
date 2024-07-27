@@ -30,7 +30,7 @@ void send_up() {
         Wire.onRequest(on_request);
         Wire.onReceive(no_receive);
 
-        Serial.println("Switched to prod handlers");
+        // Serial.println("Switched to prod handlers");
     }
 }
 
@@ -38,18 +38,19 @@ void await_confirmation(const int size) {
     while (Wire.available()) {
         char c = Wire.read();
 
-        Serial.print("Reading: ");
-        Serial.println(c);
+        // Serial.print("Reading: ");
+        // Serial.print(c);
+        // Serial.println("");
 
         if (c == UP_CHAR) {
-            Serial.println("Received confirmation");
+            // Serial.println("Received confirmation");
             received_confirmation = true;
         }
     }
 }
 
 void setup() {
-    Serial.begin(115200);
+    // Serial.begin(115200);
 
     pinMode(FRONT_LEFT_TRIG, OUTPUT);
     pinMode(FRONT_LEFT_ECHO, INPUT);
